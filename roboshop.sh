@@ -40,8 +40,7 @@ aws route53 change-resource-record-sets \
 --hosted-zone-id $ZONE_ID \
 --change-batch '
 {
-{
-  "Comment": "Update A record for $instance",
+"Comment": "Update A record for $instance",
   "Changes": [
     {
       "Action": "UPSERT",
@@ -57,8 +56,6 @@ aws route53 change-resource-record-sets \
       }
     }
   ]
-}
-
 }
 '
 
