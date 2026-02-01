@@ -48,7 +48,7 @@ cd /usr/share/nginx/html
 validate $? "Change directory is"
 unzip /tmp/frontend.zip
 validate $? "Unzip is"
-cat "$SCRIPT_DIR/frontend.txt" >> /etc/nginx/nginx.conf
+cp $SCRIPT_DIR/frontend.txt /etc/nginx/nginx.conf
 validate $? "Nginx content addition at boot of nginx.conf file is"
 
 systemctl restart nginx &>>$LOGS_FILE
