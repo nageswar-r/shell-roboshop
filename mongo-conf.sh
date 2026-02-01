@@ -24,7 +24,7 @@ validate(){
     fi
 }
 
-cp $pwd/mongod.repo /etc/yum.repos/
+cp $pwd/mongo.repo /etc/yum.repos/
 
 validate $? "Copying Mongo repo"
 
