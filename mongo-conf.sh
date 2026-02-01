@@ -3,7 +3,7 @@
 USER_ID=$(id -u)
 LOGS_FOLDER="/var/log/robo-shell"
 LOGS_FILE="$LOGS_FOLDER/$0.log"
-REPO_PATH="$pwd"
+REPO_PATH=$PWD
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
