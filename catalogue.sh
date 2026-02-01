@@ -8,7 +8,7 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 SCRIPT_DIR=$PWD
-MONGODB_HOST=mongodb.daws88s.online
+MONGODB_HOST=mongodb.sandh.co.in
 
 if [ $USER_ID -ne 0 ]; then
 
@@ -36,7 +36,7 @@ validate $? "Installing nodejs 20"
 id roboshop &>>$LOGS_FILE
 if [ $? -ne 0 ]; then
 
-useradd --system --home /app --shell /sbin/nologin --comment "roboshop system user" roboshop &??$LOGS_FILE
+useradd --system --home /app --shell /sbin/nologin --comment "roboshop system user" roboshop &>>$LOGS_FILE
 
 validate $? "roboshop user creation"
 else 
